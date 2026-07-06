@@ -1,0 +1,168 @@
+{
+  "disease": "heart_disease",
+  "display_name": "Heart Disease",
+  "target": "target",
+  "class_labels": [
+    "0",
+    "1"
+  ],
+  "features": [
+    "age",
+    "gender",
+    "height_cm",
+    "weight_kg",
+    "smoking",
+    "alcohol_consumption",
+    "exercise_activity",
+    "diet_quality",
+    "family_history_heart_disease",
+    "hypertension",
+    "chest_pain",
+    "cholesterol",
+    "resting_bp",
+    "max_heart_rate",
+    "fasting_blood_sugar"
+  ],
+  "numeric_features": [
+    "age",
+    "height_cm",
+    "weight_kg",
+    "smoking",
+    "alcohol_consumption",
+    "family_history_heart_disease",
+    "hypertension",
+    "chest_pain",
+    "cholesterol",
+    "resting_bp",
+    "max_heart_rate",
+    "fasting_blood_sugar"
+  ],
+  "categorical_features": [
+    "gender",
+    "exercise_activity",
+    "diet_quality"
+  ],
+  "best_model": "Logistic Regression",
+  "metrics": {
+    "accuracy": 0.7722222222222223,
+    "f1_score": 0.7704321482669518,
+    "roc_auc": 0.8200910931174089
+  },
+  "all_results": {
+    "Logistic Regression": {
+      "accuracy": 0.7722222222222223,
+      "f1_score": 0.7704321482669518,
+      "roc_auc": 0.8200910931174089
+    },
+    "SVM": {
+      "accuracy": 0.7111111111111111,
+      "f1_score": 0.7084362139917695,
+      "roc_auc": 0.7699898785425101
+    },
+    "Random Forest": {
+      "accuracy": 0.6944444444444444,
+      "f1_score": 0.6879934826646882,
+      "roc_auc": 0.7848557692307692
+    },
+    "XGBoost": {
+      "accuracy": 0.7111111111111111,
+      "f1_score": 0.7111111111111111,
+      "roc_auc": 0.7688512145748988
+    }
+  },
+  "feature_ranges": {
+    "age": {
+      "min": 25.0,
+      "max": 84.0,
+      "mean": 54.96222222222222,
+      "is_binary": false
+    },
+    "height_cm": {
+      "min": 145.0,
+      "max": 200.0,
+      "mean": 167.38644444444444,
+      "is_binary": false
+    },
+    "weight_kg": {
+      "min": 40.0,
+      "max": 114.4,
+      "mean": 71.85288888888888,
+      "is_binary": false
+    },
+    "smoking": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.3511111111111111,
+      "is_binary": true
+    },
+    "alcohol_consumption": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.3333333333333333,
+      "is_binary": true
+    },
+    "family_history_heart_disease": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.35444444444444445,
+      "is_binary": true
+    },
+    "hypertension": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.4088888888888889,
+      "is_binary": true
+    },
+    "chest_pain": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.30666666666666664,
+      "is_binary": true
+    },
+    "cholesterol": {
+      "min": 120.0,
+      "max": 325.6,
+      "mean": 214.08533333333332,
+      "is_binary": false
+    },
+    "resting_bp": {
+      "min": 90.0,
+      "max": 192.0,
+      "mean": 128.25555555555556,
+      "is_binary": false
+    },
+    "max_heart_rate": {
+      "min": 79.9,
+      "max": 210.0,
+      "mean": 150.10066666666668,
+      "is_binary": false
+    },
+    "fasting_blood_sugar": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.18222222222222223,
+      "is_binary": true
+    }
+  },
+  "feature_categories": {
+    "gender": [
+      "Female",
+      "Male"
+    ],
+    "exercise_activity": [
+      "High",
+      "Low",
+      "Moderate"
+    ],
+    "diet_quality": [
+      "Average",
+      "Good",
+      "Poor"
+    ]
+  },
+  "n_samples": 900,
+  "n_features": 15,
+  "n_classes": 2,
+  "training_seconds": 2.06,
+  "trained_at": "2026-07-06T11:40:18"
+}

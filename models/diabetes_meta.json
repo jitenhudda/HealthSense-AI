@@ -1,0 +1,145 @@
+{
+  "disease": "diabetes",
+  "display_name": "Diabetes",
+  "target": "outcome",
+  "class_labels": [
+    "0",
+    "1"
+  ],
+  "features": [
+    "age",
+    "gender",
+    "bmi",
+    "pregnancies",
+    "physical_activity",
+    "smoking",
+    "alcohol_consumption",
+    "family_history_diabetes",
+    "glucose",
+    "blood_pressure",
+    "insulin",
+    "hba1c"
+  ],
+  "numeric_features": [
+    "age",
+    "bmi",
+    "pregnancies",
+    "smoking",
+    "alcohol_consumption",
+    "family_history_diabetes",
+    "glucose",
+    "blood_pressure",
+    "insulin",
+    "hba1c"
+  ],
+  "categorical_features": [
+    "gender",
+    "physical_activity"
+  ],
+  "best_model": "Logistic Regression",
+  "metrics": {
+    "accuracy": 0.7555555555555555,
+    "f1_score": 0.7518425571258752,
+    "roc_auc": 0.8190586419753088
+  },
+  "all_results": {
+    "Logistic Regression": {
+      "accuracy": 0.7555555555555555,
+      "f1_score": 0.7518425571258752,
+      "roc_auc": 0.8190586419753088
+    },
+    "SVM": {
+      "accuracy": 0.7277777777777777,
+      "f1_score": 0.7231161604451658,
+      "roc_auc": 0.7935956790123456
+    },
+    "Random Forest": {
+      "accuracy": 0.7444444444444445,
+      "f1_score": 0.7316666666666666,
+      "roc_auc": 0.7854295267489713
+    },
+    "XGBoost": {
+      "accuracy": 0.7388888888888889,
+      "f1_score": 0.7344175416514855,
+      "roc_auc": 0.7564300411522633
+    }
+  },
+  "feature_ranges": {
+    "age": {
+      "min": 18.0,
+      "max": 79.0,
+      "mean": 48.80444444444444,
+      "is_binary": false
+    },
+    "bmi": {
+      "min": 15.0,
+      "max": 41.6,
+      "mean": 26.765,
+      "is_binary": false
+    },
+    "pregnancies": {
+      "min": 0.0,
+      "max": 5.0,
+      "mean": 1.261111111111111,
+      "is_binary": false
+    },
+    "smoking": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.24888888888888888,
+      "is_binary": true
+    },
+    "alcohol_consumption": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.29888888888888887,
+      "is_binary": true
+    },
+    "family_history_diabetes": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.38666666666666666,
+      "is_binary": true
+    },
+    "glucose": {
+      "min": 60.0,
+      "max": 211.8,
+      "mean": 121.47066666666667,
+      "is_binary": false
+    },
+    "blood_pressure": {
+      "min": 42.0,
+      "max": 112.1,
+      "mean": 74.9858888888889,
+      "is_binary": false
+    },
+    "insulin": {
+      "min": 0.0,
+      "max": 240.4,
+      "mean": 84.41677777777778,
+      "is_binary": false
+    },
+    "hba1c": {
+      "min": 3.5,
+      "max": 8.94,
+      "mean": 5.7328777777777775,
+      "is_binary": false
+    }
+  },
+  "feature_categories": {
+    "gender": [
+      "Female",
+      "Male"
+    ],
+    "physical_activity": [
+      "High",
+      "Low",
+      "Moderate"
+    ]
+  },
+  "n_samples": 900,
+  "n_features": 12,
+  "n_classes": 2,
+  "training_seconds": 2.02,
+  "trained_at": "2026-07-06T11:40:16"
+}
